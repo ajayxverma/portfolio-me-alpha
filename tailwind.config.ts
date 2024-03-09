@@ -26,6 +26,12 @@ const config: Config = {
           '900': '#1e3a8a',
           '950': '#172554',
         },
+        darkBg: {
+          '900': '#000000',
+        },
+        lightBg: {
+          '900': '#ffffff',
+        },
       },
       fontFamily: {
         body: [

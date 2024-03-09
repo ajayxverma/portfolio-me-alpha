@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSectionThree = () => {
   return (
-    <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
+    <div className="bg-white dark:bg-inherit pb-6 sm:pb-8 lg:pb-12">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <section className="flex flex-col items-center">
           <div className="flex items-center gap-2 rounded-2xl border bg-gray-50 p-2 text-gray-500">
@@ -24,10 +24,10 @@ const HeroSectionThree = () => {
               Hi👋 there, My Name is
             </p>
 
-            <h1 className="mb-2 text-4xl font-bold text-black sm:text-5xl md:mb-4 md:text-6xl">
+            <h1 className="mb-2 text-4xl font-bold dark:text-lightBg-900 text-black sm:text-5xl md:mb-4 md:text-6xl">
               Ajay Verma.
             </h1>
-            <h1 className="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl">
+            <h1 className="mb-8 text-4xl font-bold dark:text-lightBg-900 text-black sm:text-5xl md:mb-12 md:text-6xl">
               I build things for the web.
             </h1>
 

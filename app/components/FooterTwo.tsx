@@ -24,7 +24,7 @@ const FooterTwo = () => {
       </div>
 
       <div className="pt-12">
-        <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div className="mx-auto max-w-screen-2xl px-4 md:px-32">
           <div className="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
             <div className="col-span-full lg:col-span-2">
               <div className="mb-4 lg:-mt-2">
@@ -43,7 +43,7 @@ const FooterTwo = () => {
                   >
                     <path d="M96 0V47L48 94H0V47L48 0H96Z" />
                   </svg>
-                  Flowrift
+                  Ajay Verma
                 </a>
               </div>
 
@@ -291,8 +291,8 @@ const FooterTwo = () => {
             </div>
           </div>
 
-          <div className="border-t py-8 text-center text-sm text-gray-400">
-            © 2021 - Present Flowrift. All rights reserved.
+          <div className="border-t py-4 text-center text-sm text-gray-400">
+            © 2021 - Deign and Developed By Ajay Verma. All rights reserved.
           </div>
         </div>
       </div>

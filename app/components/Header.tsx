@@ -9,7 +9,7 @@ const Header = () => {
   const [themeColor, setThemeColor] = useState(true);
 
   return (
-    <div className="max-w-7xl mx-auto my-3 border-solid rounded-xl border-white py-2 sticky top-4 z-50 bg-white/20   backdrop-blur-3xl brightness-100 text-opacity-100">
+    <div className="max-w-7xl  mx-auto my-3 border-solid rounded-xl border-white py-2 sticky top-4 z-50 bg-white/20   backdrop-blur-3xl brightness-100 text-opacity-100">
       <nav className="border-gray-200">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <a href="#" className="flex">
@@ -50,13 +50,13 @@ const Header = () => {
             </svg>
           </button>
           <div className="hidden md:block w-full md:w-auto" id="mobile-menu">
-            <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+            <ul className="flex-col md:flex-row flex md:space-x-4 mt-4 md:mt-0 md:text-sm md:font-medium">
               {headerMenuList.map((menu, index) => {
                 return (
                   <li key={index}>
                     <a
                       href={menu.link}
-                      className="text-gray dark:text-white-600 border-b rounded-lg border-gray-100 opacity-100 md:border-0 block pl-3 pr-4 py-2 md:hover:bg-blue-100/40 md:hover:text-blue-700"
+                      className="text-gray dark:text-white-600 border-b rounded-lg border-gray-100 opacity-100 md:border-0 block px-3 py-2 md:hover:bg-blue-100/40 md:hover:text-blue-700"
                       aria-current="page"
                     >
                       {menu?.icon ? <menu.icon size={20} /> : menu?.title}

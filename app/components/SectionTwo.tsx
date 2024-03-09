@@ -4,9 +4,7 @@ const SectionTwo = () => {
   return (
     <div className="xl:container m-auto px-6 py-20 md:px-12 lg:px-20">
       <div className="m-auto text-center lg:w-8/12 xl:w-7/12">
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
-          A Tailus Blocks subscription gives you access to our components and more.
-        </h2>
+        <h2 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">About Me</h2>
       </div>
       <div className="m-auto mt-12 items-center justify-center -space-y-4 md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
         <div className="group relative z-10 -mx-4 md:mx-0 md:w-6/12 lg:w-5/12">
@@ -16,7 +14,7 @@ const SectionTwo = () => {
           ></div>
           <div className="relative space-y-6 p-8 sm:p-12">
             <h3 className="text-center text-3xl font-semibold text-gray-700 dark:text-white">
-              Organisation
+              Sometime about me 
             </h3>
             <div>
               <div className="relative flex justify-around">

@@ -16,6 +16,16 @@
   }
 } */
 
+:root {
+  --light-bg: #ffffff;
+  --light-text: #000000;
+  --dark-bg: #1a1a1a;
+  --light-text: #ffffff;
+  --primary-color: #00a9ff;
+  --secondary-color: #a0e9ff;
+  --tertiary-color: #cdf5fd;
+}
+
 main {
   padding: 0rem 5rem;
   margin: 0;
