@@ -9,7 +9,7 @@ const Header = () => {
   const [themeColor, setThemeColor] = useState(true);
 
   return (
-    <div className="max-w-7xl mx-auto my-3 border-solid border-blue-500">
+    <div className="max-w-7xl mx-auto my-3 border-solid rounded-xl border-white py-2 sticky top-4 z-50 bg-white/20   backdrop-blur-3xl brightness-100 text-opacity-100">
       <nav className="border-gray-200">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <a href="#" className="flex">
@@ -56,7 +56,7 @@ const Header = () => {
                   <li key={index}>
                     <a
                       href={menu.link}
-                      className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
+                      className="text-gray dark:text-white-600 border-b rounded-lg border-gray-100 opacity-100 md:border-0 block pl-3 pr-4 py-2 md:hover:bg-blue-100/40 md:hover:text-blue-700"
                       aria-current="page"
                     >
                       {menu?.icon ? <menu.icon size={20} /> : menu?.title}
