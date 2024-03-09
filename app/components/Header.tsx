@@ -7,7 +7,6 @@ import { MdDarkMode } from 'react-icons/md';
 
 const Header = () => {
   const [themeColor, setThemeColor] = useState(true);
-  
 
   return (
     <div className="max-w-7xl mx-auto my-3 border-solid border-blue-500">

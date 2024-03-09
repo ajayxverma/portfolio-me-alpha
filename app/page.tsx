@@ -12,6 +12,8 @@ import Services from './components/Services';
 import ProjectGrid from './components/ProjectGrid';
 import SectionTwo from './components/SectionTwo';
 import ExperienceSection from './components/ExperienceSection';
+import ProjectsCards from './components/projects-cards';
+import { ContactSection } from './components/contactSection';
 
 export default function Home() {
   return (
@@ -21,6 +23,9 @@ export default function Home() {
       <SectionTwo />
       <ExperienceSection />
       <Services />
+      <ProjectsCards />
+
+      <ContactSection />
     </main>
   );
 }
