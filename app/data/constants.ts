@@ -19,7 +19,7 @@ export const headerMenuList = [
   },
   {
     title: 'Experience',
-    link: '#',
+    link: '#experience',
     submenu: [
       { title: 'Service 1', link: '/service-1' },
       { title: 'Service 2', link: '/service-2' },
@@ -40,11 +40,5 @@ export const headerMenuList = [
       { title: 'Service 1', link: '/service-1' },
       { title: 'Service 2', link: '/service-2' },
     ],
-  },
-  {
-    title: 'Theme',
-    link: '#',
-    icon: MdDarkMode,
-    submenu: [],
   },
 ];

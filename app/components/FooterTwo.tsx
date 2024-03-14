@@ -122,7 +122,7 @@ const FooterTwo = () => {
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <div className="mb-4 font-bold uppercase tracking-widest text-gray-800">Products</div>
 
               <nav className="flex flex-col gap-4">
@@ -288,11 +288,12 @@ const FooterTwo = () => {
                   </a>
                 </div>
               </nav>
-            </div>
+            </div> */}
           </div>
 
           <div className="border-t py-4 text-center text-sm text-gray-400">
-            © 2021 - Deign and Developed By Ajay Verma. All rights reserved.
+            © 2021 - Design and Developed By{' '}
+            <span className="text-blue-500 font-bold"> Ajay Verma</span>. All rights reserved.
           </div>
         </div>
       </div>

@@ -4,12 +4,14 @@ import Image from 'next/image';
 import { headerMenuList } from '../data/constants';
 import headerIcon from '../../public/assets/icons/header-icon.svg';
 import { MdDarkMode } from 'react-icons/md';
+import { CiLight } from 'react-icons/ci';
+import { useTheme } from 'next-themes';
 
 const Header = () => {
-  const [themeColor, setThemeColor] = useState(true);
+  const { theme, setTheme } = useTheme();
 
   return (
-    <div className="max-w-7xl  mx-auto my-3 border-solid rounded-xl border-white py-2 sticky top-4 z-50 bg-white/20   backdrop-blur-3xl brightness-100 text-opacity-100">
+    <div className="max-w-7xl  mx-auto my-3 border-solid rounded-xl border-white py-2 sticky top-4 z-50 bg-blue-200/20 dark:bg-blue-200/20   backdrop-blur-3xl brightness-100 text-opacity-100">
       <nav className="border-gray-200">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <a href="#" className="flex">
@@ -59,7 +61,7 @@ const Header = () => {
                       className="text-gray dark:text-white-600 border-b rounded-lg border-gray-100 opacity-100 md:border-0 block px-3 py-2 md:hover:bg-blue-100/40 md:hover:text-blue-700"
                       aria-current="page"
                     >
-                      {menu?.icon ? <menu.icon size={20} /> : menu?.title}
+                      {menu?.title}
                     </a>
 
                     {!menu.submenu && (
@@ -92,6 +94,20 @@ const Header = () => {
                   </li>
                 );
               })}
+              {/* Dark/Light Theme Toggle Button Start */}
+              <li onClick={() => (theme === 'dark' ? setTheme('light') : setTheme('dark'))}>
+                <div
+                  className="text-gray dark:text-white-600 border-b rounded-lg border-gray-100 opacity-100 md:border-0 block px-3 py-2 md:hover:bg-blue-100/40 md:hover:text-blue-700 bg-blue-200/30"
+                  aria-current="page"
+                >
+                  {/* <div className="flex gap-1 ">
+                    <MdDarkMode size={20} className="bg-black" />
+                    <CiLight size={20} />
+                  </div> */}
+                  {theme === 'light' ? <MdDarkMode size={20} /> : <CiLight size={20} />}
+                </div>
+              </li>
+              {/* Dark/Light Theme Toggle Button Start */}
               <li>
                 <div
                   id="dropdownNavbar"

@@ -61,7 +61,7 @@ const HeroSectionThree = () => {
                 className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-8 w-8"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -78,7 +78,7 @@ const HeroSectionThree = () => {
                 className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-8 w-8"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -95,7 +95,7 @@ const HeroSectionThree = () => {
                 className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-8 w-8"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -112,7 +112,7 @@ const HeroSectionThree = () => {
                 className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
               >
                 <svg
-                  className="h-5 w-5"
+                  className="h-8 w-8"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
