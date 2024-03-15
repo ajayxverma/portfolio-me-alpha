@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { headerMenuList } from '../data/constants';
+import { headerMenuList } from '../data/siteData';
 import headerIcon from '../../public/assets/icons/header-icon.svg';
 import { MdDarkMode } from 'react-icons/md';
 import { CiLight } from 'react-icons/ci';

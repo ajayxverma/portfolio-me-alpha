@@ -42,7 +42,7 @@ main {
     rgb(var(--background-start-rgb)); */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
   main {
     padding: 0rem 0rem;
   }
