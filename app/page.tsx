@@ -14,6 +14,9 @@ import SectionTwo from './components/SectionTwo';
 import ExperienceSection from './components/ExperienceSection';
 import ProjectsCards from './components/projects-cards';
 import { ContactSection } from './components/contactSection';
+import AboutMe from './components/AboutMe';
+import ContactForm from './components/ContactForm';
+import ExperienceCard from './components/ExperienceCard';
 
 export default function Home() {
   return (
@@ -21,11 +24,14 @@ export default function Home() {
       {/*       <h1> Hello Next.js</h1> */}
       <HeroSectionThree />
       <SectionTwo />
+      <AboutMe />
       <ExperienceSection />
-      <Services />
+      <ExperienceCard/>
+      {/* <Services /> */}
       <ProjectsCards />
 
-      <ContactSection />
+      {/*       <ContactSection /> */}
+      <ContactForm />
     </main>
   );
 }

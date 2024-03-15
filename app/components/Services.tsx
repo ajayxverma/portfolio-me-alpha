@@ -4,6 +4,15 @@ const Services = () => {
   return (
     <div className="py-16">
       <div className="container m-auto px-6 text-gray-500 md:px-12 xl:px-0">
+        <div className="mb-12 space-y-2 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">
+           Services Which I Offer
+          </h2>
+          <p className="text-gray-600 dark:text-gray-300 lg:mx-auto lg:w-6/12">
+            Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum
+            officia aliquid explicabo? Excepturi, voluptate?
+          </p>
+        </div>
         <div className="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
           <div className="border border-gray-100 dark:border-gray-700 rounded-3xl bg-white dark:bg-gray-800 px-8 pt-12 shadow-2xl shadow-gray-600/10 dark:shadow-none sm:px-12 lg:px-8">
             <div className="mb-12 space-y-4">
