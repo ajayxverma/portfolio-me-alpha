@@ -6,6 +6,7 @@ import Footer from './components/footer';
 import Hero1 from './components/hero1';
 import FooterTwo from './components/FooterTwo';
 import { Providers } from './provider';
+import SimpleFooter from './components/SimpleFooter';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,7 +26,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
-          <FooterTwo />
+          <SimpleFooter />
         </Providers>
       </body>
     </html>

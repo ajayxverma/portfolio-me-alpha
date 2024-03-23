@@ -11,7 +11,7 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="max-w-7xl  mx-auto my-3 border-solid rounded-xl border-white py-2 sticky top-4 z-50 bg-blue-200/20 dark:bg-blue-200/20   backdrop-blur-3xl brightness-100 text-opacity-100">
+    <div className="max-w-7xl  mx-auto my-3 border-solid rounded-xl border-white py-2 sticky top-4 z-50 bg-blue-200/20 dark:bg-blue-200/20  backdrop-blur-3xl brightness-100 text-opacity-100">
       <nav className="border-gray-200">
         <div className="container mx-auto flex flex-wrap items-center justify-between">
           <a href="#" className="flex">
