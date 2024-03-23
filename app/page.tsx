@@ -17,18 +17,25 @@ import { ContactSection } from './components/contactSection';
 import AboutMe from './components/AboutMe';
 import ContactForm from './components/ContactForm';
 import ExperienceCard from './components/ExperienceCard';
+import SimpleAboutMe from './components/SimpleAboutMe';
+import ProjectContainer from './components/ProjectContainer';
+import ServicesCards from './components/ServicesCards';
 
 export default function Home() {
   return (
-    <main>
+    <main className="mx-auto max-w-screen-2xl">
       {/*       <h1> Hello Next.js</h1> */}
       <HeroSectionThree />
-      <SectionTwo />
-      <AboutMe />
-      <ExperienceSection />
-      <ExperienceCard/>
+     
+      {/*       <SectionTwo />
+      <AboutMe /> */}
+      <SimpleAboutMe />
+      <ServicesCards />
+      <ExperienceCard />
+
       {/* <Services /> */}
       <ProjectsCards />
+      <ProjectContainer />
 
       {/*       <ContactSection /> */}
       <ContactForm />
