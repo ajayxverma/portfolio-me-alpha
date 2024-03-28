@@ -1,20 +1,11 @@
 import React from 'react';
 import { projectData } from '../data/siteData';
-import { ProjectType } from '../types/componentsTypes';
+import { ImageInfo, ProjectType } from '../types/componentsTypes';
+import Image from 'next/image';
+import CarouselImage from './Carousel.component';
 
-export const ProjectImage = () => {
-  return (
-    <div className="sm:w-4/6 rounded-3xl overflow-hidden transition-all duration-500 group-hover:rounded-xl">
-      <img
-        src="https://images.unsplash.com/photo-1661749711934-492cd19a25c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
-        alt="art cover"
-        loading="lazy"
-        width="1000"
-        height="667"
-        className="h-56 sm:h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
-      />
-    </div>
-  );
+export const ProjectImage = (projectData: ProjectType) => {
+  return <CarouselImage images={projectData.images} />;
 };
 
 export const ProjectInfo = (projectData: ProjectType) => {
@@ -24,11 +15,9 @@ export const ProjectInfo = (projectData: ProjectType) => {
         {projectData.endDate}
       </span>
       <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
-        {projectData.description}
+        {projectData.heading}
       </h3>
-      <p className="my-6 text-gray-600 dark:text-gray-300">
-        Laudantium in, voluptates ex placeat quo harum aliquam totam, doloribus eum impedit atque...
-      </p>
+      <p className="my-6 text-gray-600 dark:text-gray-300">{projectData.description}</p>
 
       <div className="flex gap-4">
         {projectData?.techUsed?.map((tech) => {
@@ -70,11 +59,11 @@ const ProjectsCards = () => {
                 {project.imageOnRight ? (
                   <>
                     <ProjectInfo {...project} />
-                    <ProjectImage />
+                    <ProjectImage {...project} />
                   </>
                 ) : (
                   <>
-                    <ProjectImage />
+                    <ProjectImage {...project} />
                     <ProjectInfo {...project} />
                   </>
                 )}

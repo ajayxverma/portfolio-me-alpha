@@ -1,44 +1,31 @@
-import Image from 'next/image';
-import Header from './components/Header';
-import Hero1 from './components/hero1';
-import Footer from './components/footer';
-import Hero from './components/hero';
-import Stats from './components/stats';
-import Skills from './components/Skills';
-import Subscribe from './components/Subscribe';
-import HeroSectiontwo from './components/HeroSectiontwo';
 import HeroSectionThree from './components/HeroSectionThree';
-import Services from './components/Services';
-import ProjectGrid from './components/ProjectGrid';
-import SectionTwo from './components/SectionTwo';
-import ExperienceSection from './components/ExperienceSection';
 import ProjectsCards from './components/projects-cards';
-import { ContactSection } from './components/contactSection';
-import AboutMe from './components/AboutMe';
 import ContactForm from './components/ContactForm';
 import ExperienceCard from './components/ExperienceCard';
 import SimpleAboutMe from './components/SimpleAboutMe';
 import ProjectContainer from './components/ProjectContainer';
 import ServicesCards from './components/ServicesCards';
+import Carousel from './components/Carousel.component';
+import CarouselImage from './components/Carousel.component';
+import { CarouselProps } from './types/componentsTypes';
+const images = [
+  'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEBqYEUHs9SPync2bo8AmdYjzW5WYicOWF8lreCXnMcQ&s',
+  'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg',
+];
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main className="mx-auto max-w-screen-2xl">
-      {/*       <h1> Hello Next.js</h1> */}
       <HeroSectionThree />
-     
-      {/*       <SectionTwo />
-      <AboutMe /> */}
       <SimpleAboutMe />
       <ServicesCards />
       <ExperienceCard />
-
-      {/* <Services /> */}
       <ProjectsCards />
-      <ProjectContainer />
 
-      {/*       <ContactSection /> */}
+      <ProjectContainer />
       <ContactForm />
+
     </main>
   );
 }

@@ -12,29 +12,34 @@ const ServicesCards = () => {
             My Tech Stack{/*  <br className="lg:block" hidden /> */}
           </h2>
         </div>
-        <div className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-3">
-          <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+        <div className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-800 overflow-hidden rounded-3xl border border-gray-100 dark:border-gray-800 sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-3">
+          <div className="group relative bg-white dark:bg-black transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
             <div className="relative space-y-8 py-12 p-8">
-              <FaCode size={50} />
+              <FaCode size={50} color="#00A9FF" />
 
               <div className="space-y-2">
-                <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-400">
+                <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-800">
                   Backend Developer
                 </h5>
                 <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Tech I have experience with
+                  Technologies I'm Proficient In
                 </p>
                 <div className="flex justify-between">
                   <ul className="dark:text-gray-300 list-disc ml-4">
-                    <span className="ml-[-1rem] my-2 font-semibold">Frameworks</span>
+                    <span className="ml-[-1rem] my-2 font-semibold group-hover:text-primary-800">
+                      Frameworks
+                    </span>
                     <li>Nodejs</li>
                     <li>Express</li>
                     <li>MongoDB</li>
                     <li>PostgresSql</li>
                     <li>Redis</li>
+                    <li>Spring-boot</li>
                   </ul>
                   <ul className="dark:text-gray-300 list-disc ml-4">
-                    <span className="ml-[-1rem] my-2 font-semibold">Language</span>
+                    <span className="ml-[-1rem] my-2 font-semibold group-hover:text-primary-800">
+                      Language
+                    </span>
                     <li>JavaScript</li>
                     <li>Python</li>
                     <li>Java</li>
@@ -45,7 +50,7 @@ const ServicesCards = () => {
               </div>
               <a
                 href="#"
-                className="flex items-center justify-between group-hover:text-primary-400"
+                className="flex items-center justify-between group-hover:group-hover:text-primary-800"
               >
                 <span className="text-sm">Read more</span>
                 <svg
@@ -63,16 +68,16 @@ const ServicesCards = () => {
               </a>
             </div>
           </div>
-          <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+          <div className="group relative bg-white dark:bg-black transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
             <div className="relative space-y-8 py-12 p-8">
               <GrCloudlinux size={50} />
 
               <div className="space-y-2">
                 <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-400">
-                  Frontend Developer
+                  Frontend
                 </h5>
                 <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                  Technologies I'm Proficient In
                 </p>
                 <div className="flex justify-between">
                   <ul className="dark:text-gray-300 list-disc ml-4">
@@ -113,15 +118,15 @@ const ServicesCards = () => {
               </a>
             </div>
           </div>
-          <div className="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+          <div className="group relative bg-white dark:bg-black transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
             <div className="relative space-y-8 py-12 p-8">
-              <SiAltiumdesigner size={50} />
+              <SiAltiumdesigner size={50} color="#00A9FF" />
               <div className="space-y-2">
-                <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-400">
+                <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-800">
                   UI Designer
                 </h5>
                 <p className="text-[12px] text-gray-600 dark:text-gray-300">
-                  Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                  Technologies I'm Proficient In
                 </p>
                 <div className="flex justify-between">
                   <ul className="dark:text-gray-300 list-disc ml-4">
@@ -135,7 +140,7 @@ const ServicesCards = () => {
               </div>
               <a
                 href="#"
-                className="flex items-center justify-between group-hover:text-primary-400"
+                className="flex items-center justify-between group-hover:text-primary-800"
               >
                 <span className="text-sm">Read more</span>
                 <svg

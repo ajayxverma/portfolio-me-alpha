@@ -10,28 +10,28 @@ const AboutMe = () => {
       </div>
 
       <div className="m-auto mt-12 items-center justify-center -space-y-4 md:flex md:space-y-0 xl:w-11/12">
-      <div className="relative z-10 -mx-4 md:mx-0 md:w-6/12 lg:w-5/12">
-        <div
-          aria-hidden="true"
-          className="absolute top-0 h-full w-full rounded-3xl border border-gray-100 dark:border-gray-700 dark:shadow-none bg-white dark:bg-gray-800 shadow-2xl shadow-gray-600/10 transition duration-500 group-hover:scale-105"
-        ></div>
-        <div className="relative space-y-6 p-6 sm:p-12">
-          {/* <h3 className="text-center text-3xl font-semibold text-gray-700 dark:text-white">
+        <div className="relative z-10 -mx-4 md:mx-0 md:w-6/12 lg:w-5/12">
+          <div
+            aria-hidden="true"
+            className="absolute top-0 h-full w-full rounded-3xl border border-gray-100 dark:border-gray-700 dark:shadow-none bg-white dark:bg-gray-800 shadow-2xl shadow-gray-600/10 transition duration-500 group-hover:scale-105"
+          ></div>
+          <div className="relative space-y-6 p-6 sm:p-12">
+            {/* <h3 className="text-center text-3xl font-semibold text-gray-700 dark:text-white">
               Sometime about me
             </h3> */}
 
-          <div className="flex justify-center items-center">
-            <Image src={profileImg} alt="image" width={300} height={300} />
-          </div>
-          <div>
-            <span className="text-center justify-center">
-              Hello, and welcome to my corner of the internet! I'm Ajay Verma, a passionate web
-              developer dedicated to crafting stunning digital experiences. With a keen eye for
-              design, a knack for problem-solving, and a commitment to staying at the forefront of
-              technology, I create Web Apps that not only look great but also perform flawlessly.
-            </span>
-          </div>
-          {/* <div className="flex gap-4 justify-center">
+            <div className="flex justify-center items-center">
+              <Image src={profileImg} alt="image" width={300} height={300} />
+            </div>
+            <div>
+              <span className="text-center justify-center">
+                Hello, and welcome to my corner of the internet! I'm Ajay Verma, a passionate web
+                developer dedicated to crafting stunning digital experiences. With a keen eye for
+                design, a knack for problem-solving, and a commitment to staying at the forefront of
+                technology, I create Web Apps that not only look great but also perform flawlessly.
+              </span>
+            </div>
+            {/* <div className="flex gap-4 justify-center">
               <a
                 href="#"
                 target="_blank"
@@ -123,8 +123,8 @@ const AboutMe = () => {
                 Send us an Email
               </span>
             </a> */}
+          </div>
         </div>
-      </div>
         <div className="group relative md:w-7/12 lg:w-8/12">
           <div
             aria-hidden="true"

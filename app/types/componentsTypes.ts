@@ -1,15 +1,20 @@
 import { IconTree, IconType } from 'react-icons';
 
 export interface ProjectType {
-  startDate: string;
-  endDate: string;
-  heading: string;
-  description: string;
-  image: string;
-  techUsed: string[];
-  demoLink: string;
-  gitHubLink: string;
-  imageOnRight: boolean;
+  startDate?: string;
+  endDate?: string;
+  heading?: string;
+  description?: string;
+  images: ImageInfo[];
+  techUsed?: string[];
+  demoLink?: string;
+  gitHubLink?: string;
+  imageOnRight?: boolean;
+}
+
+export interface ImageInfo {
+  src: any;
+  alt: string;
 }
 
 export interface ExperienceType {
@@ -25,4 +30,8 @@ export interface SocialLinkType {
   link: string;
   sequence: number;
   icon: IconType;
+}
+
+export interface CarouselProps {
+  images: string[];
 }

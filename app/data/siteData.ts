@@ -1,10 +1,12 @@
 import DropDownIcon from '../../public/assets/icons/drop-down.svg';
+import x from '../../public/assets/Projects/analytics-dashboard-react.png';
 import { MdDarkMode } from 'react-icons/md';
 import { ExperienceType, SocialLinkType } from '../types/componentsTypes';
 import { RxInstagramLogo } from 'react-icons/rx';
 import { RiTwitterXFill } from 'react-icons/ri';
 import { RxLinkedinLogo } from 'react-icons/rx';
 import { ImGithub } from 'react-icons/im';
+import analyticsDashBoardImage1 from '../../public/assets/Projects/analytics-dashboard-react.png';
 
 export const headerMenuList = [
   {
@@ -53,37 +55,52 @@ export const projectData = [
   {
     startDate: '',
     endDate: 'Jul 27 2022',
-    heading: 'Provident de illo eveniet commodi fuga fugiat laboriosam expedita.',
+    heading: 'Analytics Dashboard',
     description:
-      'Laudantium in, voluptates ex placeat quo harum aliquam totam, doloribus eum impedit atque...',
-    image: '',
-    techUsed: ['react', 'tailwind', 'Nodejs', 'mongoDb'],
-    demoLink: 'abc',
-    gitHubLink: 'abc',
+      'This comprehensive React-based dashboard app offers a powerful suite of functionalities and tools to manage various aspects of business and productivity. It provides an intuitive interface with a focus on data visualization, task management, editing capabilities, and color selection.',
+    images: [
+      { src: '/assets/anime-image/image1.jpg', alt: 'axy' },
+      { src: '/assets/anime-image/image5.jpg', alt: 'axy' },
+      { src: '/assets/anime-image/image3.jpg', alt: 'axy' },
+      { src: '/assets/anime-image/image4.jpg', alt: 'axy' },
+    ],
+    techUsed: ['react', 'tailwind', 'Nodejs', 'mongoDb', 'syncfusion'],
+    demoLink: 'https://ajayxverma.github.io/analytic-dashboard-react-01',
+    gitHubLink: 'https://github.com/ajayxverma/analytic-dashboard-react-01',
     imageOnRight: true,
   },
   {
     startDate: '',
-    endDate: 'Jul 27 2022',
-    heading: 'Provident de illo eveniet commodi fuga fugiat laboriosam expedita.',
+    endDate: 'Jul 27 2023',
+    heading: 'VME',
     description:
-      'Laudantium in, voluptates ex placeat quo harum aliquam totam, doloribus eum impedit atque...',
-    image: '',
-    techUsed: ['react', 'tailwind', 'Nodejs', 'Next'],
+      'VME" (Virtual Media Experience) project is a Node.js and Express.js-powered backend combined with a React.js frontend, creating a vibrant social media platform. Users can register and securely log in via JWT authentication, allowing them to post, like, comment, add friends, and remove friends. With a focus on user engagement and social interaction, VME delivers a dynamic virtual community experience.',
+    images: [
+      { src: '/assets/anime-image/image1.jpg', alt: 'axy' },
+      { src: '/assets/anime-image/image5.jpg', alt: 'axy' },
+      { src: '/assets/anime-image/image3.jpg', alt: 'axy' },
+      { src: '/assets/anime-image/image4.jpg', alt: 'axy' },
+    ],
+    techUsed: ['Nodejs', 'ReactJs', 'tailwind', 'MongoDb', 'JavaScript'],
     demoLink: 'abc',
-    gitHubLink: 'abc',
+    gitHubLink: 'https://github.com/ajayxverma/VME',
     imageOnRight: false,
   },
   {
     startDate: '',
-    endDate: 'Jul 27 2022',
+    endDate: 'Sep 10 2023',
     heading: 'Provident de illo eveniet commodi fuga fugiat laboriosam expedita.',
     description:
-      'Laudantium in, voluptates ex placeat quo harum aliquam totam, doloribus eum impedit atque...',
-    image: '',
+      'Introducing our innovative blogging app, meticulously crafted with React at its core. Seamlessly blending functionality with elegance, our platform offers writers a dynamic space to express themselves and connect with readers worldwide. With a sleek and intuitive interface, writing and publishing blog posts has never been easier. customizable themes and performance of React. ',
+    images: [
+      { src: '/assets/anime-image/image1.jpg', alt: 'axy' },
+      { src: '/assets/anime-image/image5.jpg', alt: 'axy' },
+      { src: '/assets/anime-image/image3.jpg', alt: 'axy' },
+      { src: '/assets/anime-image/image4.jpg', alt: 'axy' },
+    ],
     techUsed: ['react', 'tailwind', 'Nodejs'],
     demoLink: 'abc',
-    gitHubLink: 'abc',
+    gitHubLink: 'https://github.com/ajayxverma/React_Blogging_App',
     imageOnRight: true,
   },
 ];
