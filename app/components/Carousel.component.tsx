@@ -22,21 +22,22 @@ const CarouselImage: React.FC<ProjectType> = ({ images }) => {
   const setImageOnClick = (index: number) => {
     setCurrentImageIndex(index);
   };
-  console.log(`images:: `, images);
-  console.log('currentImage', images[currentImageIndex], currentImageIndex);
   return (
-    <div className="sm:w-4/6 rounded-3xl overflow-hidden transition-all duration-500 group-hover:rounded-xl">
+    <div
+      className="sm:w-4/6 rounded-3xl overflow-hidden transition-all duration-500 group-hover:rounded-xl"
+    >
       <div className="hs-carousel relative overflow-hidden w-full max-h-28 min-h-[350px] rounded-lg">
         <div className="hs-carousel-body absolute top-0 bottom-0 left-0 flex flex-nowrap transition-transform duration-700 opacity-0">
           <div className="hs-carousel-slide transition duration-700 ease-in-out">
             <div className="flex justify-center h-full bg-gray-600 p-6 transition duration-700 ease-in-out">
-              <span className="self-center text-4xl transition-opacity duration-700 ease-in-out opacity-0 hover:opacity-100 bg-green-300 overflow-hidden">
+              <span className="self-center text-4xl  transition-opacity duration-700 ease-in-out opacity-0 hover:opacity-100 bg-green-300 overflow-hidden">
                 <Image
                   src={images[currentImageIndex].src}
                   alt="abc"
                   height={500}
                   width={500}
                   objectFit="contain"
+                  className="transition-opacity duration-700 ease-in-out"
                 />
               </span>
             </div>

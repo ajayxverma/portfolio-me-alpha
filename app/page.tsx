@@ -8,6 +8,7 @@ import ServicesCards from './components/ServicesCards';
 import Carousel from './components/Carousel.component';
 import CarouselImage from './components/Carousel.component';
 import { CarouselProps } from './types/componentsTypes';
+import { VerticalTab, VerticalTabs } from './components/test-components/tabSection';
 const images = [
   'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEBqYEUHs9SPync2bo8AmdYjzW5WYicOWF8lreCXnMcQ&s',
@@ -22,10 +23,8 @@ export default function HomePage() {
       <ServicesCards />
       <ExperienceCard />
       <ProjectsCards />
-
       <ProjectContainer />
       <ContactForm />
-
     </main>
   );
 }

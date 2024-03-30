@@ -22,8 +22,8 @@ const config: Config = {
         secondary: {
           '100': '#FF008E',
           '300': '#FF407D',
-          '500': '#FEA1BF',
-          '800': '#FF008E',
+          '500': '#793FDF',
+          '800': '#793FDF',
         },
         grayColor: {
           '100': '#FF008E',

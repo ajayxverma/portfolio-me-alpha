@@ -51,7 +51,7 @@ export const headerMenuList = [
   },
 ];
 
-export const projectData = [
+export const featuredProjectData = [
   {
     startDate: '',
     endDate: 'Jul 27 2022',
@@ -60,8 +60,8 @@ export const projectData = [
       'This comprehensive React-based dashboard app offers a powerful suite of functionalities and tools to manage various aspects of business and productivity. It provides an intuitive interface with a focus on data visualization, task management, editing capabilities, and color selection.',
     images: [
       { src: '/assets/anime-image/image1.jpg', alt: 'axy' },
-      { src: '/assets/anime-image/image5.jpg', alt: 'axy' },
-      { src: '/assets/anime-image/image3.jpg', alt: 'axy' },
+      { src: '/assets/anime-image/image2.jpg', alt: 'axy' },
+      { src: '/assets/anime-image/anime.jpg', alt: 'axy' },
       { src: '/assets/anime-image/image4.jpg', alt: 'axy' },
     ],
     techUsed: ['react', 'tailwind', 'Nodejs', 'mongoDb', 'syncfusion'],
@@ -110,10 +110,12 @@ export const experienceData: ExperienceType[] = [
     title: 'Xyz',
     sequence: 1,
     companyName: 'Capgemini',
+    sectionId: '1',
     startDate: '8/06/2021',
     rolesAndResponsibility: [
       'Deliver high-quality, robust production code for a diverse array of projects.',
-      'Designed, developed, & maintained APIs using framekwork like Node.js, ExpressJs Spring, Spring-boot while efficiently fetching data from Cognite using GraphQL achieving reduced latency & improved application performance. Designed and implemented database Schemas to support data retrieval & storage',
+      'Designed, developed, & maintained APIs using framework like Node.js, ExpressJs Spring, Spring-boot while achieving reduced latency & improved application performance.',
+      'Designed and implemented database Schemas to support data retrieval & storage',
       'Implemented performance optimization techniques, reducing page load times and improving overall site speed',
       'Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders.',
       'Implemented CI/CD pipelines using GitLab CI/CD for seamless build, test, and deployment processes. Ensuring efficient release cycles for web applications.',
@@ -122,46 +124,8 @@ export const experienceData: ExperienceType[] = [
   {
     title: 'Xyz',
     sequence: 1,
-    companyName: 'Capgemini',
-    startDate: '8/06/2021',
-    rolesAndResponsibility: [
-      'Deliver high-quality, robust production code for a diverse array of projects.',
-      'Designed, developed, & maintained APIs using framekwork like Node.js, ExpressJs Spring, Spring-boot while efficiently fetching data from Cognite using GraphQL achieving reduced latency & improved application performance. Designed and implemented database Schemas to support data retrieval & storage',
-      'Implemented performance optimization techniques, reducing page load times and improving overall site speed',
-      'Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders.',
-      'Implemented CI/CD pipelines using GitLab CI/CD for seamless build, test, and deployment processes. Ensuring efficient release cycles for web applications.',
-    ],
-  },
-  {
-    title: 'Xyz',
-    sequence: 1,
-    companyName: 'Capgemini',
-    startDate: '8/06/2021',
-    rolesAndResponsibility: [
-      'Deliver high-quality, robust production code for a diverse array of projects.',
-      'Designed, developed, & maintained APIs using framekwork like Node.js, ExpressJs Spring, Spring-boot while efficiently fetching data from Cognite using GraphQL achieving reduced latency & improved application performance. Designed and implemented database Schemas to support data retrieval & storage',
-      'Implemented performance optimization techniques, reducing page load times and improving overall site speed',
-      'Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders.',
-      'Implemented CI/CD pipelines using GitLab CI/CD for seamless build, test, and deployment processes. Ensuring efficient release cycles for web applications.',
-    ],
-  },
-  {
-    title: 'Xyz',
-    sequence: 1,
-    companyName: 'Capgemini',
-    startDate: '8/06/2021',
-    rolesAndResponsibility: [
-      'Deliver high-quality, robust production code for a diverse array of projects.',
-      'Designed, developed, & maintained APIs using framekwork like Node.js, ExpressJs Spring, Spring-boot while efficiently fetching data from Cognite using GraphQL achieving reduced latency & improved application performance. Designed and implemented database Schemas to support data retrieval & storage',
-      'Implemented performance optimization techniques, reducing page load times and improving overall site speed',
-      'Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders.',
-      'Implemented CI/CD pipelines using GitLab CI/CD for seamless build, test, and deployment processes. Ensuring efficient release cycles for web applications.',
-    ],
-  },
-  {
-    title: 'Xyz',
-    sequence: 1,
-    companyName: 'Capgemini',
+    companyName: 'Amazon',
+    sectionId: '2',
     startDate: '8/06/2021',
     rolesAndResponsibility: [
       'Deliver high-quality, robust production code for a diverse array of projects.',
@@ -176,25 +140,25 @@ export const experienceData: ExperienceType[] = [
 export const socialLinks: SocialLinkType[] = [
   {
     title: 'Github',
-    link: '#',
+    link: 'https://github.com/ajayxverma',
     sequence: 1,
     icon: ImGithub,
   },
   {
     title: 'LinkedIn',
-    link: '#',
+    link: 'https://www.linkedin.com/in/ajayxverma/',
     sequence: 2,
     icon: RxLinkedinLogo,
   },
   {
     title: 'Twitter',
-    link: '#',
+    link: 'https://x.com/heyAjayverma',
     sequence: 3,
     icon: RiTwitterXFill,
   },
   {
     title: 'Instagram',
-    link: '#',
+    link: 'https://instagram.com/_ajay_verma',
     sequence: 4,
     icon: RxInstagramLogo,
   },

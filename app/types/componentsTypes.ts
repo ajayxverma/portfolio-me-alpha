@@ -22,6 +22,7 @@ export interface ExperienceType {
   sequence: number;
   companyName: string;
   startDate: string;
+  sectionId: string;
   rolesAndResponsibility: string[];
 }
 

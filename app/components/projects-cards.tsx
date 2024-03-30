@@ -1,5 +1,5 @@
 import React from 'react';
-import { projectData } from '../data/siteData';
+import { featuredProjectData } from '../data/siteData';
 import { ImageInfo, ProjectType } from '../types/componentsTypes';
 import Image from 'next/image';
 import CarouselImage from './Carousel.component';
@@ -40,7 +40,7 @@ export const ProjectInfo = (projectData: ProjectType) => {
 
 const ProjectsCards = () => {
   return (
-    <div className="py-12">
+    <div className="my-24">
       <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <div className="mb-12 space-y-2 text-center">
           <h2 className="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">
@@ -53,9 +53,9 @@ const ProjectsCards = () => {
         </div>
 
         <div className="lg:w-3/4 xl:w-4/4 lg:mx-auto flex-wrap">
-          {projectData.map((project) => {
+          {featuredProjectData.map((project) => {
             return (
-              <div className="group relative hover:z-10 -mx-4 sm:-mx-8 p-6 sm:p-8 rounded-3xl bg-white dark:bg-transparent border border-transparent hover:border-gray-100 dark:shadow-none dark:hover:border-gray-700 dark:hover:bg-gray-800 shadow-2xl shadow-transparent hover:shadow-gray-600/10 sm:gap-8 sm:flex transition duration-300">
+              <div className="group relative hover:z-10 -mx-4 sm:-mx-8 p-6 sm:p-8 rounded-3xl bg-white dark:bg-transparent border border-transparent hover:border-gray-100 dark:shadow-none dark:hover:border-gray-700 dark:hover:bg-black shadow-2xl shadow-transparent hover:shadow-gray-600/10 sm:gap-8 sm:flex transition duration-300">
                 {project.imageOnRight ? (
                   <>
                     <ProjectInfo {...project} />

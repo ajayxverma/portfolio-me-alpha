@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../../public/assets/images/Artboard-4.svg';
+import profileImg from '../../public/assets/images/profile-anime.svg';
 import Image from 'next/image';
 import { IoIosArrowDown } from 'react-icons/io';
 import { LiaFileDownloadSolid } from 'react-icons/lia';
@@ -20,7 +20,7 @@ const SimpleAboutMe = () => {
             alt="image"
             width={400}
             height={400}
-            className="rounded-full bg-primary-400 bg-opacity-10 backdrop-blur-3xl"
+            className="bg-primary-400 bg-opacity-10 backdrop-blur-3xl"
           />
         </div>
 
@@ -62,7 +62,7 @@ const SimpleAboutMe = () => {
 
             <a
               href="#"
-              className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 mt-4 overflow-hidden text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+              className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 mt-4 overflow-hidden text-white transition-colors duration-300 bg-primary-800 rounded-lg shadow sm:w-auto sm:mx-2 sm:mt-0 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80"
             >
               <span className="mx-2">Download Resume</span>
               <LiaFileDownloadSolid size={20} />

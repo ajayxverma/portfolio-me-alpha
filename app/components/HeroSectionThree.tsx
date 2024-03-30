@@ -73,9 +73,10 @@ const HeroSectionThree = () => {
               {socialLinks.map((value, index) => {
                 return (
                   <a
+                    key={index}
                     href={value.link}
                     target="_blank"
-                    className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
+                    className="text-gray-400 transition duration-100 hover:text-primary-500 active:text-gray-600"
                   >
                     {<value.icon size={30} fill="currentColor" />}
                   </a>

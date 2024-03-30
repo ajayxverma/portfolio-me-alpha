@@ -17,9 +17,7 @@ const TabButton: React.FC<VerticalTabProps> = ({ title, sequence, onClick, activ
       <div className="relative">
         {isActive ? (
           <input checked hidden className="peer" type="radio" name="devs" id={sequence} />
-        ) : (
-          ''
-        )}
+        ) : null}
         <label
           htmlFor={sequence}
           className="block w-full cursor-pointer rounded-lg bg-sky-50 dark:bg-black/90 py-2 px-4 text-center text-sky-800 dark:text-sky-300 peer-checked:text-primary-800 peer-checked:ring-1 peer-checked:ring-primary-800"
@@ -65,47 +63,37 @@ const ExperienceCard = () => {
   const [activeTab, setActiveTab] = useState<string>('1');
 
   const handleTabClick = (sequence: string) => {
+
     setActiveTab(sequence);
   };
 
   return (
-    <div className="my-24">
-      <div className="mb-12 space-y-2 text-center">
-        <h2 className="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">
-          My Tech Experience
-        </h2>
-        <p className="text-gray-600 dark:text-gray-300 lg:mx-auto lg:w-6/12">
-          Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum
-          officia aliquid explicabo? Excepturi, voluptate?
-        </p>
-      </div>
-      <div className="m-auto mt-12 items-center justify-center space-y-4 lg:flex lg:space-y-0 lg:space-x-2">
-        <div className="group relative m-auto">
-          <div className="relative sm:flex justify-center max-w-screen-lg">
-            <div className="-mt-16 pb-20 sm:mt-0 sm:w-4/12 sm:pb-0">
-              <div className="relative h-full after:absolute after:right-0 after:bottom-2 after:my-auto after:h-0.5 after:w-full after:rounded-full after:bg-gray-200 dark:after:bg-gray-700 sm:pt-0 sm:after:inset-y-0 sm:after:h-[85%] sm:after:w-0.5">
-                <div className="relative -mt-1 h-full overflow-auto pt-7 pb-6 sm:-mr-3 sm:pr-3">
-                  <ul className="flex h-full w-max justify-center space-x-2 px-6 sm:w-full sm:flex-col sm:space-x-0 sm:space-y-6 sm:px-8">
-                    {experienceData.map((experience) => (
-                      <TabButton
-                        key={experience.sectionId}
-                        sequence={experience.sectionId}
-                        title={experience.companyName}
-                        onClick={() => handleTabClick(experience.sectionId)}
-                        activeTab={activeTab}
-                      />
-                    ))}
-                  </ul>
-                </div>
+    <div className="m-auto mt-12 items-center justify-center space-y-4 lg:flex lg:space-y-0 lg:space-x-2">
+      <div className="group relative m-auto">
+        <div className="relative sm:flex justify-center max-w-screen-lg">
+          <div className="-mt-16 pb-20 sm:mt-0 sm:w-4/12 sm:pb-0">
+            <div className="relative h-full after:absolute after:right-0 after:bottom-2 after:my-auto after:h-0.5 after:w-full after:rounded-full after:bg-gray-200 dark:after:bg-gray-700 sm:pt-0 sm:after:inset-y-0 sm:after:h-[85%] sm:after:w-0.5">
+              <div className="relative -mt-1 h-full overflow-auto pt-7 pb-6 sm:-mr-3 sm:pr-3">
+                <ul className="flex h-full w-max justify-center space-x-2 px-6 sm:w-full sm:flex-col sm:space-x-0 sm:space-y-6 sm:px-8">
+                  {experienceData.map((experience) => (
+                    <TabButton
+                      key={experience.sectionId}
+                      sequence={experience.sectionId}
+                      title={experience.companyName}
+                      onClick={() => handleTabClick(experience.sectionId)}
+                      activeTab={activeTab}
+                    />
+                  ))}
+                </ul>
               </div>
             </div>
-            {experienceData.map((exp) => {
-              if (activeTab === exp?.sectionId) {
-                return <TabBodyContent key={exp.sequence} {...exp} />;
-              }
-              return null;
-            })}
           </div>
+          {experienceData.map((exp) => {
+            if (activeTab === exp?.sectionId) {
+              return <TabBodyContent key={exp.sequence} {...exp} />;
+            }
+            return null;
+          })}
         </div>
       </div>
     </div>
