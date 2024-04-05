@@ -36,10 +36,10 @@ export const ProjectInfo = (projectData: ProjectType) => {
       </div>
       <div className="my-4 flex justify-between">
         <a
-          href="#"
+          href={projectData.demoLink}
           className="flex gap-6 items-center opacity-0 justify-between dark:text-gray-300 text-gray-800 hover:text-primary-500 group-hover:opacity-100 transition 	transition-duration: 200ms; ease-in-out "
         >
-          <span className="text-sm -translate-x-4 transition duration-300 group-hover:translate-x-0">
+          <span className="text-sm -translate-x-4 transition duration-300 group-hover:translate-x-0 font-bold">
             Demo
           </span>
           <VscLinkExternal
@@ -49,10 +49,10 @@ export const ProjectInfo = (projectData: ProjectType) => {
         </a>
 
         <a
-          href="#"
+          href={projectData.gitHubLink}
           className="flex gap-6 items-center opacity-0 justify-between dark:text-gray-300 text-gray-800 hover:text-primary-500 group-hover:opacity-100 transition 	transition-duration: 200ms; ease-in-out "
         >
-          <span className="text-sm translate-x-4 transition duration-300 group-hover:translate-x-0">
+          <span className="text-sm translate-x-4 transition duration-300 group-hover:translate-x-0 font-bold">
             Github
           </span>
           <svg
@@ -74,7 +74,7 @@ export const ProjectInfo = (projectData: ProjectType) => {
 };
 
 const ProjectListHeading = {
-  heading: 'Project I have worked on',
+  heading: 'Featured Projects',
   description:
     'cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate?',
 };

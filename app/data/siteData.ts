@@ -1,12 +1,8 @@
-import DropDownIcon from '../../public/assets/icons/drop-down.svg';
-import x from '../../public/assets/Projects/analytics-dashboard-react.png';
-import { MdDarkMode } from 'react-icons/md';
 import { ExperienceType, SocialLinkType } from '../types/componentsTypes';
 import { RxInstagramLogo } from 'react-icons/rx';
 import { RiTwitterXFill } from 'react-icons/ri';
 import { RxLinkedinLogo } from 'react-icons/rx';
 import { ImGithub } from 'react-icons/im';
-import analyticsDashBoardImage1 from '../../public/assets/Projects/analytics-dashboard-react.png';
 
 export const headerMenuList = [
   {
