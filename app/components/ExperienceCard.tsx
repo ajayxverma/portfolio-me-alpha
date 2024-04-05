@@ -64,7 +64,7 @@ const TabBodyContent: React.FC<ExperienceType> = (experience) => {
 
 const ExperienceCard = () => {
   const ProjectListHeading = {
-    heading: 'Project I have worked on',
+    heading: 'My Experience',
     description:
       'cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate?',
   };

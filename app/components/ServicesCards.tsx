@@ -6,7 +6,7 @@ import SectionHeading from './elements/SectionHeading';
 
 const ServicesCards = () => {
   const ProjectListHeading = {
-    heading: 'Project I have worked on',
+    heading: 'My Tech Stack',
   };
   return (
     <div className="py-1">
