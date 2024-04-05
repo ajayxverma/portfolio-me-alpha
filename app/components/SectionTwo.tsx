@@ -20,10 +20,11 @@ const SectionTwo = () => {
             </div>
             <div>
               <span className="text-center justify-center">
-                Hello, and welcome to my corner of the internet! I'm Ajay Verma, a passionate web
-                developer dedicated to crafting stunning digital experiences. With a keen eye for
-                design, a knack for problem-solving, and a commitment to staying at the forefront of
-                technology, I create Web Apps that not only look great but also perform flawlessly.
+                Hello, and welcome to my corner of the internet! I&apos;m Ajay Verma, a passionate
+                web developer dedicated to crafting stunning digital experiences. With a keen eye
+                for design, a knack for problem-solving, and a commitment to staying at the
+                forefront of technology, I create Web Apps that not only look great but also perform
+                flawlessly.
               </span>
             </div>
             {/* <div className="flex gap-4 justify-center">

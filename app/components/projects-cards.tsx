@@ -22,9 +22,10 @@ export const ProjectInfo = (projectData: ProjectType) => {
       <p className="my-6 text-gray-600 dark:text-gray-300">{projectData.description}</p>
 
       <div className="flex gap-2 flex-wrap">
-        {projectData?.techUsed?.map((tech) => {
+        {projectData?.techUsed?.map((tech, index) => {
           return (
             <a
+              key={index}
               href="#"
               className="px-3 py-1 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:text-white dark:border-gray-700 dark:text-gray-300"
             >
@@ -102,9 +103,12 @@ const ProjectsCards = () => {
       <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <SectionHeading {...ProjectListHeading} />
         <div className="lg:w-10/12 xl:w-4/4 lg:mx-auto flex-wrap">
-          {featuredProjectData.map((project) => {
+          {featuredProjectData.map((project, index) => {
             return (
-              <div className="group relative hover:z-[2] sm:-mx-8 p-6 sm:p-8  rounded-3xl bg-white dark:bg-transparent border border-transparent hover:border-gray-100 dark:shadow-none dark:hover:border-gray-700 dark:hover:bg-black shadow-2xl shadow-transparent hover:shadow-gray-600/10 sm:gap-8 sm:flex sm:items-center transition duration-300">
+              <div
+                key={index}
+                className="group relative hover:z-[2] sm:-mx-8 p-6 sm:p-8  rounded-3xl bg-white dark:bg-transparent border border-transparent hover:border-gray-100 dark:shadow-none dark:hover:border-gray-700 dark:hover:bg-black shadow-2xl shadow-transparent hover:shadow-gray-600/10 sm:gap-8 sm:flex sm:items-center transition duration-300"
+              >
                 {project.imageOnRight || isMobile ? (
                   <>
                     <ProjectInfo {...project} />

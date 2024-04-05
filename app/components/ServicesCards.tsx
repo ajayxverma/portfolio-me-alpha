@@ -23,7 +23,7 @@ const ServicesCards = () => {
                     Backend Developer
                   </h5>
                   <p className="text-sm text-gray-600 dark:text-gray-300">
-                    Technologies I'm Proficient In
+                    Technologies I&apos;m Proficient In
                   </p>
                   <div className="flex justify-between">
                     <ul className="dark:text-gray-300 list-disc ml-4">
@@ -79,7 +79,7 @@ const ServicesCards = () => {
                     Frontend
                   </h5>
                   <p className="text-sm text-gray-600 dark:text-gray-300">
-                    Technologies I'm Proficient In
+                    Technologies I&apos;m Proficient In
                   </p>
                   <div className="flex justify-between">
                     <ul className="dark:text-gray-300 list-disc ml-4">
@@ -130,7 +130,7 @@ const ServicesCards = () => {
                     UI Designer
                   </h5>
                   <p className="text-[12px] text-gray-600 dark:text-gray-300">
-                    Technologies I'm Proficient In
+                    Technologies I&apos;m Proficient In
                   </p>
                   <div className="flex justify-between">
                     <ul className="dark:text-gray-300 list-disc ml-4">

@@ -141,7 +141,7 @@ const Footer = () => {
             <p className="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">
               Connect with Me
               <br className="lg:block hidden" />
-              Let's Create Something Amazing
+              Let&apos;s Create Something Amazing
             </p>
           </div>
           <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
