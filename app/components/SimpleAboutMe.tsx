@@ -41,12 +41,12 @@ const SimpleAboutMe = () => {
                 Microservices, Mongodb, Posgresql, sequalize.
               </span>
             </span>
-            With years of hands-on experience in this field, I've honed my ability to create
+            With years of hands-on experience in this field, I&apos;ve honed my ability to create
             high-quality software solutions.
             <br />
             <br />
             My expertise extends to software design and development, particularly in crafting robust
-            data structures and product-oriented designs. I'm passionate about learning new
+            data structures and product-oriented designs. I&apos;m passionate about learning new
             technologies and frameworks, continually expanding my technical skill set. I tackle
             real-world challenges with analytical reasoning, breaking them down into logical
             components to develop effective, scalable solutions..{' '}

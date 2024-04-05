@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExperienceSection = () => {
   return (
-    <div className="xl:container m-auto px-6 py-20 md:px-12 lg:px-20" id='experience'>
+    <div className="xl:container m-auto px-6 py-20 md:px-12 lg:px-20" id="experience">
       <div className="m-auto text-center lg:w-8/12 xl:w-7/12">
         <h2 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
           A Tailus Blocks subscription gives you access to our components and more.
@@ -158,8 +158,8 @@ const ExperienceSection = () => {
                 alt="premium illustration"
               />
               <p className="text-center text-gray-600 dark:text-gray-300">
-                Wire your account to support 5 developers with a year's worth of unlimited access to
-                tailus blocks!
+                Wire your account to support 5 developers with a year&apos;s worth of unlimited
+                access to tailus blocks!
               </p>
               <div className="absolute inset-x-0 bottom-6 w-full px-6 sm:static sm:px-0">
                 <button className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-slate-700 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
