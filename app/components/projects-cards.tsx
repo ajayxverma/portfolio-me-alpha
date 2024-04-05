@@ -76,7 +76,7 @@ export const ProjectInfo = (projectData: ProjectType) => {
 const ProjectListHeading = {
   heading: 'Featured Projects',
   description:
-    'cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate?',
+    'Discovering Innovation: Showcasing Pioneering Projects and Technical Expertise',
 };
 
 const ProjectsCards = () => {

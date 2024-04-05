@@ -3,9 +3,8 @@ import ProjectCardx from './ProjectCardx';
 import SectionHeading from './elements/SectionHeading';
 
 const ProjectListHeading = {
-  heading: 'Other Project I have worked on',
-  description:
-    'cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate?',
+  heading: 'Other Project Showcase',
+  description: 'Exploring Diverse Endeavors: A Glimpse into My Varied Project',
 };
 
 const ProjectContainer = () => {

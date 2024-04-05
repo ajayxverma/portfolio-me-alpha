@@ -66,7 +66,7 @@ const ExperienceCard = () => {
   const ProjectListHeading = {
     heading: 'My Experience',
     description:
-      'cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate?',
+      'Explore My Digital Realm: A Journey Through Projects, Technologies, and Learning Experiences',
   };
 
   const [activeTab, setActiveTab] = useState<string>('1');
