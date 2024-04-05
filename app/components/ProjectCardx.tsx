@@ -5,7 +5,7 @@ const ProjectCardx = () => {
   return (
     <div className="flex justify-center">
       <div className="flex items-end justify-center text-center sm:block sm:p-0">
-        <div className="group relative inline-block px-4 overflow-hidden text-left align-bottom transition-all transform bg-white border-solid border-[1px] border-gray-100 dark:border-gray-900 border-1 rounded-lg hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:hover:shadow-blue-400/20 dark:bg-inherit sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+        <div className="group relative inline-block px-4 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white border-solid border-[1px] border-gray-100 dark:border-gray-900 border-1 rounded-lg hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:hover:shadow-blue-400/20 dark:bg-inherit sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
           <div>
             {/* <img
               className="object-cover w-full h-48 rounded-md"

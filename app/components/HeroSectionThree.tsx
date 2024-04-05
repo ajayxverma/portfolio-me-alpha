@@ -12,7 +12,7 @@ const HeroSectionThree = () => {
       </div>
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8 backdrop-blur-sm bg-opacity-10">
         <section className="flex flex-col items-center">
-          <div className="flex items-center gap-2 rounded-2xl border bg-gray-50 p-2 text-gray-500">
+          {/* <div className="flex items-center gap-2 rounded-2xl border bg-gray-50 p-2 text-gray-500">
             <span className="mt-0.5 rounded-full bg-primary-300 px-2 py-1 text-xs font-semibold leading-none text-primary-800">
               connect
             </span>
@@ -25,7 +25,7 @@ const HeroSectionThree = () => {
             >
               More
             </a>
-          </div>
+          </div> */}
           <div className="flex max-w-4xl flex-col items-center pb-12 pt-8 text-center lg:pb-16 lg:pt-14">
             <Image src={headerIcon} alt="Header Icon" height="30" width="30" className="mx-4" />
             <p className="mb-4 mt-2 font-semibold text-secondary-800 md:mb-6 md:text-lg xl:text-xl">

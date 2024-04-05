@@ -36,3 +36,8 @@ export interface SocialLinkType {
 export interface CarouselProps {
   images: string[];
 }
+
+export interface HeadingProp {
+  heading: string;
+  description?: string;
+}

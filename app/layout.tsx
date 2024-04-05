@@ -7,6 +7,7 @@ import Hero1 from './components/hero1';
 import FooterTwo from './components/FooterTwo';
 import { Providers } from './provider';
 import SimpleFooter from './components/SimpleFooter';
+import HeaderTest from './components/test-components/HeaderTest';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,7 +25,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`dark:bg-black ${inter.className}`}>
         <Providers>
-          <Header />
+          {/* <Header /> */}
+          <HeaderTest />
           {children}
           <SimpleFooter />
         </Providers>

@@ -2,50 +2,52 @@ import React from 'react';
 import { FaCode } from 'react-icons/fa';
 import { GrCloudlinux } from 'react-icons/gr';
 import { SiAltiumdesigner } from 'react-icons/si';
+import SectionHeading from './elements/SectionHeading';
 
 const ServicesCards = () => {
+  const ProjectListHeading = {
+    heading: 'Project I have worked on',
+  };
   return (
     <div className="py-1">
       <div className="xl:container m-auto px-6 text-gray-500 md:px-12">
-        <div>
-          <h2 className="mt-4 text-2xl font-bold text-center text-gray-700 dark:text-white md:text-4xl">
-            My Tech Stack{/*  <br className="lg:block" hidden /> */}
-          </h2>
-        </div>
+        <SectionHeading {...ProjectListHeading} />
         <div className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-800 overflow-hidden rounded-3xl border border-gray-100 dark:border-gray-800 sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-3">
           <div className="group relative bg-white dark:bg-black transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-            <div className="relative space-y-8 py-12 p-8">
-              <FaCode size={50} color="#00A9FF" />
+            <div className="flex flex-col h-full justify-between space-y-8 py-12 p-8">
+              <div className="space-y-6">
+                <FaCode size={50} className="group-hover:fill-primary-800" />
 
-              <div className="space-y-2">
-                <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-800">
-                  Backend Developer
-                </h5>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Technologies I'm Proficient In
-                </p>
-                <div className="flex justify-between">
-                  <ul className="dark:text-gray-300 list-disc ml-4">
-                    <span className="ml-[-1rem] my-2 font-semibold group-hover:text-primary-800">
-                      Frameworks
-                    </span>
-                    <li>Nodejs</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                    <li>PostgresSql</li>
-                    <li>Redis</li>
-                    <li>Spring-boot</li>
-                  </ul>
-                  <ul className="dark:text-gray-300 list-disc ml-4">
-                    <span className="ml-[-1rem] my-2 font-semibold group-hover:text-primary-800">
-                      Language
-                    </span>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>HTML</li>
-                    <li>Css</li>
-                  </ul>
+                <div className="space-y-2">
+                  <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-800">
+                    Backend Developer
+                  </h5>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                    Technologies I'm Proficient In
+                  </p>
+                  <div className="flex justify-between">
+                    <ul className="dark:text-gray-300 list-disc ml-4">
+                      <span className="ml-[-1rem] my-2 font-semibold group-hover:text-primary-800">
+                        Frameworks
+                      </span>
+                      <li>Nodejs</li>
+                      <li>Express</li>
+                      <li>MongoDB</li>
+                      <li>PostgresSql</li>
+                      <li>Redis</li>
+                      <li>Spring-boot</li>
+                    </ul>
+                    <ul className="dark:text-gray-300 list-disc ml-4">
+                      <span className="ml-[-1rem] my-2 font-semibold group-hover:text-primary-800">
+                        Language
+                      </span>
+                      <li>JavaScript</li>
+                      <li>Python</li>
+                      <li>Java</li>
+                      <li>HTML</li>
+                      <li>Css</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <a
@@ -69,38 +71,39 @@ const ServicesCards = () => {
             </div>
           </div>
           <div className="group relative bg-white dark:bg-black transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-            <div className="relative space-y-8 py-12 p-8">
-              <GrCloudlinux size={50} />
-
-              <div className="space-y-2">
-                <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-400">
-                  Frontend
-                </h5>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Technologies I'm Proficient In
-                </p>
-                <div className="flex justify-between">
-                  <ul className="dark:text-gray-300 list-disc ml-4">
-                    <span className="ml-[-1rem] my-2 font-semibold">Frameworks</span>
-                    <li>ReactJs</li>
-                    <li>NextJs</li>
-                    <li>Redux</li>
-                    <li>Tailwind</li>
-                    <li>MUI</li>
-                  </ul>
-                  <ul className="dark:text-gray-300 list-disc ml-4">
-                    <span className="ml-[-1rem] my-2 font-semibold">Language</span>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>HTML</li>
-                    <li>Css</li>
-                  </ul>
+            <div className="flex flex-col h-full justify-between space-y-8 py-12 p-8">
+              <div className="space-y-6">
+                <GrCloudlinux size={50} className="group-hover:fill-primary-800" />
+                <div className="space-y-2">
+                  <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-800">
+                    Frontend
+                  </h5>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                    Technologies I'm Proficient In
+                  </p>
+                  <div className="flex justify-between">
+                    <ul className="dark:text-gray-300 list-disc ml-4">
+                      <span className="ml-[-1rem] my-2 font-semibold">Frameworks</span>
+                      <li>ReactJs</li>
+                      <li>NextJs</li>
+                      <li>Redux</li>
+                      <li>Tailwind</li>
+                      <li>MUI</li>
+                    </ul>
+                    <ul className="dark:text-gray-300 list-disc ml-4">
+                      <span className="ml-[-1rem] my-2 font-semibold">Language</span>
+                      <li>JavaScript</li>
+                      <li>Python</li>
+                      <li>Java</li>
+                      <li>HTML</li>
+                      <li>Css</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <a
                 href="#"
-                className="flex items-center justify-between group-hover:text-primary-400"
+                className="flex items-center justify-between group-hover:text-primary-800"
               >
                 <span className="text-sm">Read more</span>
                 <svg
@@ -119,23 +122,25 @@ const ServicesCards = () => {
             </div>
           </div>
           <div className="group relative bg-white dark:bg-black transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
-            <div className="relative space-y-8 py-12 p-8">
-              <SiAltiumdesigner size={50} color="#00A9FF" />
-              <div className="space-y-2">
-                <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-800">
-                  UI Designer
-                </h5>
-                <p className="text-[12px] text-gray-600 dark:text-gray-300">
-                  Technologies I'm Proficient In
-                </p>
-                <div className="flex justify-between">
-                  <ul className="dark:text-gray-300 list-disc ml-4">
-                    <li>Wireframing and Prototyping</li>
-                    <li>Figma</li>
-                    <li>User Experience (UX) Design</li>
-                    <li>Responsive Design</li>
-                    <li>React</li>
-                  </ul>
+            <div className="flex flex-col h-full justify-between space-y-8 py-12 p-8">
+              <div className="space-y-6">
+                <SiAltiumdesigner size={50} className="group-hover:fill-primary-800" />
+                <div className="space-y-2">
+                  <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-800">
+                    UI Designer
+                  </h5>
+                  <p className="text-[12px] text-gray-600 dark:text-gray-300">
+                    Technologies I'm Proficient In
+                  </p>
+                  <div className="flex justify-between">
+                    <ul className="dark:text-gray-300 list-disc ml-4">
+                      <li>Wireframing and Prototyping</li>
+                      <li>Figma</li>
+                      <li>User Experience (UX) Design</li>
+                      <li>Responsive Design</li>
+                      <li>React</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <a

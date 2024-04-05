@@ -65,8 +65,8 @@ const ContactForm = () => {
               </p>
             </div> */}
           </div>
-          <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-            <div className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-gray-800 sm:p-12">
+          <div className="w-full px-4 lg:w-1/2 xl:w-5/12 ">
+            <div className="relative rounded-lg bg-white p-8 border-primary-300 shadow-lg dark:bg-darkBg-900 sm:p-12 border-[1px] dark:border-gray-900">
               <form>
                 <ContactInputBox type="text" name="name" placeholder="Your Name" />
                 <ContactInputBox type="text" name="email" placeholder="Your Email" />
@@ -79,7 +79,7 @@ const ContactForm = () => {
                 <div>
                   <button
                     type="submit"
-                    className="w-full rounded border border-primary-300 bg-primary-500 p-3 text-white transition hover:bg-opacity-90"
+                    className="w-full rounded border border-primary-300 dark:border-gray-900 bg-primary-800 p-3 text-white transition hover:bg-opacity-90"
                   >
                     Send Message
                   </button>
@@ -908,7 +908,7 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }: any) => {
           rows={row}
           placeholder={placeholder}
           name={name}
-          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-gray-800 dark:bg-gray-700 dark:text-dark-6"
+          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-gray-900 dark:bg-darkBg-900 dark:text-dark-6"
           defaultValue={defaultValue}
         />
       </div>
@@ -924,7 +924,7 @@ const ContactInputBox = ({ type, placeholder, name }: any) => {
           type={type}
           placeholder={placeholder}
           name={name}
-          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-gray-800 dark:bg-gray-700 dark:text-dark-6"
+          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-gray-900 dark:bg-darkBg-900 dark:text-dark-6"
         />
       </div>
     </>

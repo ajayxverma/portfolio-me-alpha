@@ -26,7 +26,7 @@ const CarouselImage: React.FC<ProjectType> = ({ images }) => {
     <div
       className="sm:w-4/6 rounded-3xl overflow-hidden transition-all duration-500 group-hover:rounded-xl"
     >
-      <div className="hs-carousel relative overflow-hidden w-full max-h-28 min-h-[350px] rounded-lg">
+      <div className="hs-carousel relative overflow-hidden w-full max-h-36 min-h-[350px] rounded-lg">
         <div className="hs-carousel-body absolute top-0 bottom-0 left-0 flex flex-nowrap transition-transform duration-700 opacity-0">
           <div className="hs-carousel-slide transition duration-700 ease-in-out">
             <div className="flex justify-center h-full bg-gray-600 p-6 transition duration-700 ease-in-out">

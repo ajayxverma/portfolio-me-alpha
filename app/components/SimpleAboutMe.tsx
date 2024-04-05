@@ -3,15 +3,16 @@ import profileImg from '../../public/assets/images/profile-anime.svg';
 import Image from 'next/image';
 import { IoIosArrowDown } from 'react-icons/io';
 import { LiaFileDownloadSolid } from 'react-icons/lia';
+import SectionHeading from './elements/SectionHeading';
 
 const SimpleAboutMe = () => {
+  const ProjectListHeading = {
+    heading: 'About Me',
+  };
+
   return (
     <div className="bg-white dark:bg-inherit md:mx-24">
-      <div className="pb-0 pt-20 space-y-2 text-center">
-        <h2 className="text-3xl font-bold text-primary-800 md:text-4xl dark:text-white">
-          About Me
-        </h2>
-      </div>
+      <SectionHeading {...ProjectListHeading} />
 
       <div className="container flex flex-col items-center px-4 py-16 mx-auto xl:flex-row">
         <div className="flex items-center justify-center xl:w-1/2">
@@ -24,7 +25,7 @@ const SimpleAboutMe = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0">
+        <div className="flex flex-col font-body items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0">
           <h2 className="text-2xl font-semibold tracking-tight text-primary-500 xl:text-3xl dark:text-white">
             My Intro
           </h2>

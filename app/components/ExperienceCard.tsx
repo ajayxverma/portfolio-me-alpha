@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { experienceData } from '@/app/data/siteData';
 import { ExperienceType } from '@/app/types/componentsTypes';
+import SectionHeading from './elements/SectionHeading';
 
 interface VerticalTabProps {
   title: string;
@@ -37,7 +38,7 @@ const TabButton: React.FC<VerticalTabProps> = ({ title, sequence, onClick, activ
 
 const TabBodyContent: React.FC<ExperienceType> = (experience) => {
   return (
-    <div id={experience.sectionId} className="space-y-2 p-8 sm:pl-16 pb-20 sm:w-8/12 sm:pb-8">
+    <div id={experience.sectionId} className="space-y-2 p-8 sm:pl-16 pb-8 sm:w-8/12 sm:pb-8">
       <div className="flex items-center justify-between">
         <div className="flex flex-col">
           <h5 className="text-xl font-semibold text-gray-700 dark:text-white">
@@ -62,6 +63,12 @@ const TabBodyContent: React.FC<ExperienceType> = (experience) => {
 };
 
 const ExperienceCard = () => {
+  const ProjectListHeading = {
+    heading: 'Project I have worked on',
+    description:
+      'cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia aliquid explicabo? Excepturi, voluptate?',
+  };
+
   const [activeTab, setActiveTab] = useState<string>('1');
 
   const handleTabClick = (sequence: string) => {
@@ -70,19 +77,11 @@ const ExperienceCard = () => {
 
   return (
     <div className="my-24">
-      <div className="mb-12 space-y-2 text-center">
-        <h2 className="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">
-          My Tech Experience
-        </h2>
-        <p className="text-gray-600 dark:text-gray-300 lg:mx-auto lg:w-6/12">
-          Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum
-          officia aliquid explicabo? Excepturi, voluptate?
-        </p>
-      </div>
-      <div className="m-auto mt-12 items-center justify-center space-y-4 lg:flex lg:space-y-0 lg:space-x-2">
+      <SectionHeading {...ProjectListHeading} />
+      <div className="m-auto mt-12 items-center justify-center space-y-4 lg:flex lg:space-y-0 lg:space-x-2 overflow-hidden">
         <div className="group relative m-auto">
           <div className="relative sm:flex justify-center max-w-screen-lg">
-            <div className="-mt-16 pb-20 sm:mt-0 sm:w-4/12 sm:pb-0">
+            <div className="sm:mt-0 sm:w-4/12 sm:pb-0">
               <div className="relative h-full after:absolute after:right-0 after:bottom-2 after:my-auto after:h-0.5 after:w-full after:rounded-full after:bg-gray-200 dark:after:bg-gray-700 sm:pt-0 sm:after:inset-y-0 sm:after:h-[85%] sm:after:w-0.5">
                 <div className="relative -mt-1 h-full overflow-auto pt-7 pb-6 sm:-mr-3 sm:pr-3">
                   <ul className="flex h-full w-max justify-center space-x-2 px-6 sm:w-full sm:flex-col sm:space-x-0 sm:space-y-6 sm:px-8">
