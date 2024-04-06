@@ -11,7 +11,7 @@ const SimpleAboutMe = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-inherit md:mx-24">
+    <div className="bg-white dark:bg-inherit md:mx-24" id="about">
       <SectionHeading {...ProjectListHeading} />
 
       <div className="container flex flex-col items-center px-4 py-16 mx-auto xl:flex-row">
@@ -54,7 +54,7 @@ const SimpleAboutMe = () => {
 
           <div className="mt-6 sm:-mx-2">
             <a
-              href="#"
+              href="#experience"
               className="inline-flex items-center justify-center w-full px-4 text-sm py-2.5 overflow-hidden text-white transition-colors duration-300 bg-primary-800 rounded-lg shadow sm:w-auto sm:mx-2 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
             >
               <span className="mx-2">Know More About Me</span>

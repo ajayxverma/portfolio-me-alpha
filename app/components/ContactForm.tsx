@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactForm = () => {
   return (
-    <section className="bg-white dark:bg-inherit">
+    <section className="bg-white dark:bg-inherit"  id='contact'>
       <div className="container px-6 py-12 mx-auto">
         <div className="flex flex-col justify-center items-center">
           <div className="lg:w-8/10 lg:mx-6">

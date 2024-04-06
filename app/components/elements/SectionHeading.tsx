@@ -4,7 +4,7 @@ import React from 'react';
 const SectionHeading: React.FC<HeadingProp> = ({ heading, description }) => {
   return (
     <div className="my-16  space-y-2 text-center flex flex-col justify-center items-center">
-      <h2 className="text-3xl font-heading font-bold text-gray-800 md:text-5xl dark:text-white">
+      <h2 className="text-3xl font-heading font-bold text-gray-800 md:text-5xl dark:text-white capitalize">
         {heading}
       </h2>
       {description && (

@@ -9,7 +9,7 @@ const ServicesCards = () => {
     heading: 'My Tech Stack',
   };
   return (
-    <div className="py-1">
+    <div className="py-1" id="tech-stack">
       <div className="xl:container m-auto px-6 text-gray-500 md:px-12">
         <SectionHeading {...ProjectListHeading} />
         <div className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-800 overflow-hidden rounded-3xl border border-gray-100 dark:border-gray-800 sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-3">
@@ -73,7 +73,10 @@ const ServicesCards = () => {
           <div className="group relative bg-white dark:bg-black transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
             <div className="flex flex-col h-full justify-between space-y-8 py-12 p-8">
               <div className="space-y-6">
-                <GrCloudlinux size={50} className="group-hover:fill-primary-800" />
+                <GrCloudlinux
+                  size={50}
+                  className="group-hover:fill-primary-800 group-hover:animate-spin"
+                />
                 <div className="space-y-2">
                   <h5 className="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary-800">
                     Frontend
