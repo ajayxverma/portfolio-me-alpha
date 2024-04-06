@@ -37,7 +37,7 @@ export const ProjectInfo = (projectData: ProjectType) => {
       <div className="my-4 flex justify-between">
         <a
           href={projectData.demoLink}
-          className="flex gap-6 items-center opacity-0 justify-between dark:text-gray-300 text-gray-800 hover:text-primary-500 group-hover:opacity-100 transition 	transition-duration: 200ms; ease-in-out "
+          className="hover:-translate-y-1 flex gap-6 items-center opacity-0 justify-between dark:text-gray-300 text-gray-800 hover:text-primary-500 group-hover:opacity-100 transition 	transition-duration: 200ms; ease-in-out "
         >
           <span className="text-sm -translate-x-4 transition duration-300 group-hover:translate-x-0 font-bold">
             Demo
@@ -50,7 +50,7 @@ export const ProjectInfo = (projectData: ProjectType) => {
 
         <a
           href={projectData.gitHubLink}
-          className="flex gap-6 items-center opacity-0 justify-between dark:text-gray-300 text-gray-800 hover:text-primary-500 group-hover:opacity-100 transition 	transition-duration: 200ms; ease-in-out "
+          className="hover:-translate-y-1 flex gap-6 items-center opacity-0 justify-between dark:text-gray-300 text-gray-800 hover:text-primary-500 group-hover:opacity-100 transition 	transition-duration: 200ms; ease-in-out "
         >
           <span className="text-sm translate-x-4 transition duration-300 group-hover:translate-x-0 font-bold">
             Github
@@ -75,8 +75,7 @@ export const ProjectInfo = (projectData: ProjectType) => {
 
 const ProjectListHeading = {
   heading: 'Featured Projects',
-  description:
-    'Discovering Innovation: Showcasing Pioneering Projects and Technical Expertise',
+  description: 'Discovering Innovation: Showcasing Pioneering Projects and Technical Expertise',
 };
 
 const ProjectsCards = () => {
@@ -99,15 +98,15 @@ const ProjectsCards = () => {
     };
   }, []);
   return (
-    <div className="my-24">
-      <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+    <div className="my-24" id="works">
+      <div className="container m-auto px-2 text-gray-600 md:px-12 xl:px-6">
         <SectionHeading {...ProjectListHeading} />
         <div className="lg:w-10/12 xl:w-4/4 lg:mx-auto flex-wrap">
           {featuredProjectData.map((project, index) => {
             return (
               <div
                 key={index}
-                className="group relative hover:z-[2] sm:-mx-8 p-6 sm:p-8  rounded-3xl bg-white dark:bg-transparent border border-transparent hover:border-gray-100 dark:shadow-none dark:hover:border-gray-700 dark:hover:bg-black shadow-2xl shadow-transparent hover:shadow-gray-600/10 sm:gap-8 sm:flex sm:items-center transition duration-300"
+                className="group relative hover:z-[2] sm:-mx-8 p-4 sm:p-8  rounded-3xl bf  border border-transparent hover:border-gray-100 dark:hover:border-gray-700 dark:hover:bg-transparent shadow-2xl shadow-transparent hover:shadow-gray-600/10 dark:hover:shadow-blue-400/20 bg-inherit sm:gap-8 sm:flex sm:items-center transition duration-300"
               >
                 {project.imageOnRight || isMobile ? (
                   <>

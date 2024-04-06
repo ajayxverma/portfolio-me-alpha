@@ -29,7 +29,7 @@ const TabButton: React.FC<VerticalTabProps> = ({ title, sequence, onClick, activ
         </label>
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 bottom-[-1.70rem] z-[1] mx-auto h-6 w-6 scale-0 rounded-full border-8 border-white dark:border-gray-800 bg-primary-800 transition peer-checked:scale-100 sm:inset-y-0 sm:right-[-2.70rem] sm:my-auto sm:mr-0"
+          className="absolute animate-pulse inset-x-0 bottom-[-1.70rem] z-[1] mx-auto h-6 w-6 scale-0 rounded-full border-8 border-white dark:border-gray-800 bg-primary-800 transition peer-checked:scale-100 sm:inset-y-0 sm:right-[-2.70rem] sm:my-auto sm:mr-0"
         ></div>
       </div>
     </li>
@@ -42,7 +42,7 @@ const TabBodyContent: React.FC<ExperienceType> = (experience) => {
       <div className="flex items-center justify-between">
         <div className="flex flex-col">
           <h5 className="text-xl font-semibold text-gray-700 dark:text-white">
-            {experience.companyName}
+            {experience.title}
           </h5>
           <p className="text-sm font-normal text-gray-400 dark:text-gray-400">
             {experience.startDate}
@@ -76,7 +76,7 @@ const ExperienceCard = () => {
   };
 
   return (
-    <div className="my-24">
+    <div className="my-24" id='experience'>
       <SectionHeading {...ProjectListHeading} />
       <div className="m-auto mt-12 items-center justify-center space-y-4 lg:flex lg:space-y-0 lg:space-x-2 overflow-hidden">
         <div className="group relative m-auto">

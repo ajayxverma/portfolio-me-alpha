@@ -41,3 +41,10 @@ export interface HeadingProp {
   heading: string;
   description?: string;
 }
+export interface OtherProData {
+  title: string;
+  description: string;
+  techUsed: string[];
+  demoLink?: string;
+  gitHubLink: string;
+}

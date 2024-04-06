@@ -6,7 +6,7 @@ import heroBgImage from '../../public/assets/images/bg-home2.svg';
 
 const HeroSectionThree = () => {
   return (
-    <div className="bg-white dark:bg-inherit pb-6 sm:pb-8 lg:pb-12">
+    <div className="bg-white dark:bg-inherit pb-6 sm:pb-8 lg:pb-12" id="hero">
       <div className="opacity-30 z-[-10]">
         <Image src={heroBgImage} alt="Background" layout="fill" objectFit="cover" priority={true} />
       </div>
@@ -48,14 +48,14 @@ const HeroSectionThree = () => {
             </p>
             <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
               <a
-                href="#"
+                href="#contact"
                 className="inline-block rounded-lg bg-primary-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-primary-500 focus-visible:ring active:bg-indigo-700 md:text-base"
               >
                 Get IN Touch
               </a>
 
               <a
-                href="#"
+                href="#about"
                 className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
               >
                 View Portfolio
