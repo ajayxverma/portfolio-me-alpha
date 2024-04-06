@@ -59,7 +59,12 @@ const CarouselImage: React.FC<ProjectType> = ({ images }) => {
         >
           &lt;
         </button>
-        <img src={images[currentImageIndex].src} alt="carousel item" />
+        <Image
+          src={images[currentImageIndex].src}
+          style={{ objectFit: 'fill' }}
+          objectFit="cover"
+          alt="carousel item"
+        />
         <button
           className="absolute top-1/2 right-0 transform size-10 -translate-y-1/2 bg-gray-300  rounded-full opacity-75"
           onClick={goToNext}

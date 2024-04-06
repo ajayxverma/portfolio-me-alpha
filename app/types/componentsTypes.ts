@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image';
 import { IconTree, IconType } from 'react-icons';
 
 export interface ProjectType {
@@ -13,7 +14,7 @@ export interface ProjectType {
 }
 
 export interface ImageInfo {
-  src: any;
+  src: StaticImageData | any;
   alt: string;
 }
 

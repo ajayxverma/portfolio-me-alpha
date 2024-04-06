@@ -4,6 +4,14 @@ import { RiTwitterXFill } from 'react-icons/ri';
 import { RxLinkedinLogo } from 'react-icons/rx';
 import { ImGithub } from 'react-icons/im';
 import analyticDashboard from '../../public/assets/project-image/react-dashboard-1.png';
+import analyticDashboard1 from '../../public/assets/project-image/react-dashboard-2.png';
+import analyticDashboard2 from '../../public/assets/project-image/react-dashboard-3.png';
+import analyticDashboard3 from '../../public/assets/project-image/react-dashboard-4.png';
+import analyticDashboard4 from '../../public/assets/project-image/react-dashboard-4.png';
+import vmeImage1 from '../../public/assets/project-image/vme-1.png';
+import portfolio1 from '../../public/assets/project-image/portfolio-1.png';
+import portfolio2 from '../../public/assets/project-image/portfolio-2.png';
+import portfolio3 from '../../public/assets/project-image/portfolio-3.png';
 
 export const headerMenuList = [
   {
@@ -56,10 +64,11 @@ export const featuredProjectData = [
     description:
       'This comprehensive React-based dashboard app offers a powerful suite of functionalities and tools to manage various aspects of business and productivity. It provides an intuitive interface with a focus on data visualization, task management, editing capabilities, and color selection.',
     images: [
-      { src: '/assets/project-image/react-dashboard-1.png', alt: 'axy' },
-      { src: '/assets/anime-image/image2.jpg', alt: 'axy' },
-      { src: '/assets/anime-image/anime.jpg', alt: 'axy' },
-      { src: '/assets/anime-image/image4.jpg', alt: 'axy' },
+      { src: analyticDashboard, alt: 'axy' },
+      { src: analyticDashboard1, alt: 'axy' },
+      { src: analyticDashboard2, alt: 'axy' },
+      { src: analyticDashboard3, alt: 'axy' },
+      { src: analyticDashboard4, alt: 'axy' },
     ],
     techUsed: ['React', 'Tailwind', 'Nodejs', 'mongoDb', 'syncfusion', 'Redux'],
     demoLink: 'https://ajayxverma.github.io/analytic-dashboard-react-01',
@@ -73,10 +82,7 @@ export const featuredProjectData = [
     description:
       'VME" (Virtual Media Experience) project is a Node.js and Express.js-powered backend combined with a React.js frontend, creating a vibrant social media platform. Users can register and securely log in via JWT authentication, allowing them to post, like, comment, add friends, and remove friends. With a focus on user engagement and social interaction, VME delivers a dynamic virtual community experience.',
     images: [
-      { src: '/assets/anime-image/image1.jpg', alt: 'axy' },
-      { src: '/assets/anime-image/image5.jpg', alt: 'axy' },
-      { src: '/assets/anime-image/image3.jpg', alt: 'axy' },
-      { src: '/assets/anime-image/image4.jpg', alt: 'axy' },
+      { src: vmeImage1, alt: 'axy' }
     ],
     techUsed: ['Nodejs', 'ReactJs', 'Tailwind', 'MongoDb', 'JavaScript', 'Redux'],
     demoLink: 'https://github.com/ajayxverma/VME',
@@ -90,10 +96,9 @@ export const featuredProjectData = [
     description:
       "My portfolio project addresses the need for a visually appealing and functional platform to showcase my skills, projects, and achievements as a developer. By leveraging Next.js and other technologies, I've created a professional and engaging portfolio that effectively communicates my capabilities to potential employers, clients, and collaborators.",
     images: [
-      { src: '/assets/anime-image/image1.jpg', alt: 'axy' },
-      { src: '/assets/anime-image/image5.jpg', alt: 'axy' },
-      { src: '/assets/anime-image/image3.jpg', alt: 'axy' },
-      { src: '/assets/anime-image/image4.jpg', alt: 'axy' },
+      { src: portfolio1, alt: 'axy' },
+      { src: portfolio2, alt: 'axy' },
+      { src: portfolio3, alt: 'axy' },
     ],
     techUsed: ['Nextjs', 'Tailwind', 'Nodejs', 'Redux'],
     demoLink: 'https://ajayxverma.github.io/portfolio-me-alpha/',
