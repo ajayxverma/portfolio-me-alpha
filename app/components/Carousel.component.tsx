@@ -54,19 +54,20 @@ const CarouselImage: React.FC<ProjectType> = ({ images }) => {
           })}
         </div>
         <button
-          className="absolute top-1/2 left-0 transform size-10 -translate-y-1/2 bg-gray-300 rounded-full opacity-75"
+          className="absolute z-10 top-1/2 left-0 transform size-10 -translate-y-1/2 bg-gray-300 rounded-full opacity-75"
           onClick={goToPrevious}
         >
           &lt;
         </button>
         <Image
           src={images[currentImageIndex].src}
-          style={{ objectFit: 'fill' }}
+          layout="fill"
           objectFit="cover"
           alt="carousel item"
+          className="transition-opacity duration-700 ease-in-out"
         />
         <button
-          className="absolute top-1/2 right-0 transform size-10 -translate-y-1/2 bg-gray-300  rounded-full opacity-75"
+          className="absolute z-10  top-1/2 right-0 transform size-10 -translate-y-1/2 bg-gray-300  rounded-full opacity-75"
           onClick={goToNext}
         >
           &gt;
